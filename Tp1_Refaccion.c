@@ -20,7 +20,7 @@ int main() {
         index = buscar_o_agregar_articulo(articulos, &cantidad_articulos, descripcion);
         printf("Articulo: %s - Indice: %d\n", descripcion, index);
 
-        printf("¿Para que sucursal? (1-3): ");
+        printf("Para que sucursal? (1-3): ");
         scanf("%d", &sucursal);
 
         if (sucursal >= 1 && sucursal <= 3) {
@@ -29,7 +29,7 @@ int main() {
             printf("Sucursal invalida\n");
         }
 
-        printf("¿Desea ingresar otro articulo? (1-Sí, 2-No): ");
+        printf("Desea ingresar otro articulo? (1-Si, 2-No): ");
         scanf("%d", &opcion);
     }
 
