@@ -13,6 +13,7 @@ typedef struct {
     int total;
 } articulos_t;
 
+void cargar_articulos(articulos_t *articulos, int *cantidad_articulos); // Funcion nueva
 void inicializar_articulos(articulos_t articulos[], int n);
 int buscar_o_agregar_articulo(articulos_t articulos[], int* cantidad_actual, char descripcion[]);
 void cargar_cantidad(articulos_t articulos[], int index, int sucursal);
