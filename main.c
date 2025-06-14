@@ -13,25 +13,7 @@ int main() {
 
     printf("Bienvenido al Final de Informatica I (Refaccionado)\n");
 
-    while (opcion == 1) {
-        printf("Ingrese la descripcion del articulo: ");
-        scanf("%s", descripcion);
-
-        index = buscar_o_agregar_articulo(articulos, &cantidad_articulos, descripcion);
-        printf("Articulo: %s - Indice: %d\n", descripcion, index);
-
-        printf("Para que sucursal? (1-3): ");
-        scanf("%d", &sucursal);
-
-        if (sucursal >= 1 && sucursal <= 3) {
-            cargar_cantidad(articulos, index, sucursal);
-        } else {
-            printf("Sucursal invalida\n");
-        }
-
-        printf("Desea ingresar otro articulo? (1-Si, 2-No): ");
-        scanf("%d", &opcion);
-    }
+    cargar_articulos(articulos, &cantidad_articulos);
 
     calcular_total(articulos, cantidad_articulos);
 
